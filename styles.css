@@ -1,0 +1,544 @@
+/*Global*/
+
+a{
+  text-decoration: none;
+}
+
+/*Social Bar*/
+
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);  
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 25px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+/*Whatsapp*/ 
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*h2 effect*/
+span{
+    background: rgb(0,139,139);
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%); 
+    
+}
+
+/*Glow effect*/ 
+.glow {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  } 
+  
+  @-webkit-keyframes glow{
+    from {
+      text-shadow: 0 0 10px black, 0 0 20px #fff, 0 0 30px #0017e6, 0 0 40px #0064e6, 0 0 50px #0092e6, 0 0 60px #008ae6, 0 0 70px #00a5e6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px black, 0 0 30px #4d7cff, 0 0 40px #4deaff, 0 0 50px #4de4ff, 0 0 60px #4dd5ff, 0 0 70px #4d9aff, 0 0 80px #4d6eff;
+    }
+  }
+
+/*Logo*/ 
+
+.nav-brand {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;  
+    
+  }
+  
+/*Navbar*/ 
+
+nav{ 
+    padding: 0;
+    margin: 0; 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+    background: rgb(0,128,128);
+    height: 100px; 
+    width: 100%; 
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */ 
+    z-index: 1;
+}  
+
+/*list navbar*/
+
+nav ul{
+    float: right;
+    margin-right: 10px; 
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+    margin: 0 5px; 
+} 
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 17px; 
+    padding: 7px 13px; 
+    border-radius: 3px;
+    text-transform: uppercase; 
+    text-decoration: none; 
+} 
+
+.active,a:hover{
+    background: black; 
+    transition: .5s;
+} 
+
+.checkbtn{
+    font-size: 30px; 
+    color: #fff; 
+    float: right;
+    line-height: 100px;
+    margin-right: 40px; 
+    cursor: pointer; 
+    display: none;
+}
+
+#check{
+    display: none;
+}  
+
+
+
+
+/*Servicios*/ 
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/*Data Section*/ 
+
+
+
+
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    box-sizing: border-box; 
+    
+  }
+  
+  .row {margin: 0 25px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white; 
+   
+  }
+  
+  .fa {font-size:50px;}
+
+
+
+/*Form Section*/   
+
+.container .form .form-header .form-title {
+  font-weight: normal;
+  font-family: sans-serif;
+  color: rgb(0,128,128);
+  text-align: center;
+  padding: 14px 0;
+}
+
+.container .form {
+  background: black;
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 23px;
+}
+.container .form .form-label {
+  display: block;
+  color: rgb(95, 215, 252);
+  font-size: 16px;
+  font-family: Roboto;
+  position: relative;
+}
+
+.container .form .form-input, .form-textarea {
+  background: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(95, 215, 252);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: black;
+  font-family: Roboto;
+}
+
+.container .form .form-textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.container .form .btn-submit {
+  width: 100%;
+  font-family: Roboto;
+  outline: none;
+  background: #000000;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.container .form .btn-submit:hover {
+  background: rgb(0,139,139);
+}  
+
+/*Collapsible*/  /*Usted esta aqui*/
+
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: default;
+  padding: 18px;
+  width: 100%;
+  border: 4mm ridge rgb(0,139,139);
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(0,139,139);
+} 
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+} 
+
+/*Parallax*/ 
+
+.parallax {
+  /* The image used */
+  background-image: url("https://img.freepik.com/vector-gratis/concepto-quimica-verde-brillante-cubilete-quimico-planta-hojas-verdes_67515-75.jpg?w=740");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+/*Parallax*/ 
+
+.parallax2 {
+  /* The image used */
+  background-image: url("https://www.ciaramolina.com/wp-content/uploads/2020/07/en-construccion.png-768x503.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Footer*/ 
+
+footer{
+  background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%237f7e81' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1100px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px; 
+    } 
+    nav ul li a{ 
+        font-size: 14px;  
+        margin-right: -10px;
+        
+    }
+} 
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px; 
+    } 
+    nav ul li a{ 
+        font-size: 14px;  
+        margin-right: -10px;
+        
+    }
+} 
+
+@media (max-width: 858px){ 
+    .checkbtn{
+        display: block;
+    } 
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh; 
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center; 
+        transition: all .5s;
+    } 
+    nav ul li{ 
+        display: block; 
+        margin: 50px 0;
+        line-height: 30px;
+
+    } 
+    nav ul li a{ 
+        font-size: 20px;
+
+    } 
+    a:hover,a.active{
+        background: none;
+        color: #ffffff;
+    } 
+
+    #check:checked ~ ul{
+        left: 0; 
+    }
+     
+} 
+
+@media (max-width: 768px){
+  .footer-container{
+    padding: 2rem;
+    flex-direction: column;
+  } 
+
+  .footer-content-container{
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid #2a2a2a;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .footer-content-container:nth-of-type(1){
+    align-items: flex-start;
+  } 
+
+  .footer-content-container:nth-of-type(3){
+   border-bottom: none;
+   padding-bottom: 0;
+  } 
+
+  .footer-menus{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .footer-menus .footer-content-container:nth-of-type(1){
+    width: 45%;
+    align-items: flex-start; 
+    border-bottom: none;
+  } 
+
+  .footer-menus .footer-content-container:nth-of-type(2){
+    width: 45%;
+    align-items: flex-start; 
+    border-bottom: none;
+  }
+
+} 
+
+@media (max-width: 480px) { 
+  #categoriasderegistros{
+    font-size: 13px;
+  }
+
+
+}
+
+categorias de registros
